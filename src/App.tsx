@@ -1,16 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useMemo, useState } from 'react';
 
-function App() {
-  const [count, setCount] = useState(0)
+import {ConnectionProvider,WalletProvider} from "@solana/wallet-adapter-react";
+import {clusterApiUrl,Transaction,PublicKey,SystemProgram} from "@solana/web3.js"
+import "@solana/wallet-adapter-react-ui/styles.css";
+import { WalletModalProvider,WalletMultiButton } from '@solana/wallet-adapter-react-ui';
+import BalanceDisplay from "./components/BalanceDisplay.js"
 
-  return (
-    <>
-    Hiii Pradum
-    </>
+
+export default function App() {
+
+  const endpoint=clusterApiUrl("devnet");
+
+  const wallets=useMemo(()=>[],[]);
+
+  return(
+    <ConnectionProvider endpoint={endpoint}>
+    <WalletProvider wallets={wallets}>
+
+      
+    <WalletModalProvider>
+      <WalletMultiButton/>
+     <BalanceDisplay/>
+    </WalletModalProvider>
+
+
+    </WalletProvider>
+     </ConnectionProvider>
   )
-}
 
-export default App
+  
+}
