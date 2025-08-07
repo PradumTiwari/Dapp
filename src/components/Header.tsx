@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Header = ({publicKey:any}) => {
+const Header = () => {
   return (
     <div>Header</div>
   )

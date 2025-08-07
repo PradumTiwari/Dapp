@@ -1,5 +1,5 @@
 import React from 'react'
-import SendSol from './SendSol'
+import SendSol from '../pages/SendSol'
 import CallingAprogramInstruction from './CallingAprogramInstruction'
 import { useConnection, useWallet } from '@solana/wallet-adapter-react'
 
