@@ -43,7 +43,7 @@ export default function App() {
   const wallets=useMemo(()=>[],[]);
 
   return(
-    <div className='flex flex-col items-center justify-center h-screen bg-gradient-to-b from-green-100 to-green-900    '>
+    <div className='flex flex-col items-center justify-center h-full bg-gradient-to-b from-green-100 to-green-900    '>
     <ConnectionProvider endpoint={endpoint}>
     <WalletProvider wallets={wallets}>
 
@@ -51,7 +51,8 @@ export default function App() {
     <WalletModalProvider>
      
      <div className="py-4">
-              <WalletMultiButton />
+    
+            
             </div>
             {/* Render the router content here */}
             <RouterProvider router={router} />
