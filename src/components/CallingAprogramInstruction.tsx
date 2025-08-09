@@ -4,7 +4,7 @@ import {
     Transaction,
     TransactionInstruction,
 } from "@solana/web3.js";
-import React, { useState } from "react";
+import  { useState } from "react";
 import { FaKey, FaMicrochip, FaRocket } from "react-icons/fa";
 
 const CallingAprogramInstruction = () => {

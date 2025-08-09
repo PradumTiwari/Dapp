@@ -1,5 +1,5 @@
 import { useConnection, useWallet } from '@solana/wallet-adapter-react'
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 
 const GetBalance = () => {
     const {connection}=useConnection();

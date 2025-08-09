@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Getbalance from "../components/GetBalance";
 const GetBalance = () => {
   return (

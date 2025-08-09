@@ -1,6 +1,6 @@
-import React, { useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
-import { PublicKey, Keypair, SystemProgram, Transaction } from '@solana/web3.js';
+import { Keypair, SystemProgram, Transaction } from '@solana/web3.js';
 import { TOKEN_PROGRAM_ID, MINT_SIZE, createInitializeMintInstruction } from '@solana/spl-token';
 import { FaCoins, FaRocket } from 'react-icons/fa';
 

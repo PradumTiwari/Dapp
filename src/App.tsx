@@ -1,9 +1,9 @@
-import React, { useMemo, useState } from 'react';
+import  { useMemo } from 'react';
 
 import {ConnectionProvider,WalletProvider} from "@solana/wallet-adapter-react";
-import {clusterApiUrl,Transaction,PublicKey,SystemProgram} from "@solana/web3.js"
+import {clusterApiUrl} from "@solana/web3.js"
 import "@solana/wallet-adapter-react-ui/styles.css";
-import { WalletModalProvider,WalletMultiButton } from '@solana/wallet-adapter-react-ui';
+import { WalletModalProvider } from '@solana/wallet-adapter-react-ui';
 import { createBrowserRouter,RouterProvider} from 'react-router-dom';
 import Home from './pages/Home';
 import GetBalance from './components/GetBalance';

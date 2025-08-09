@@ -1,6 +1,6 @@
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
 import { LAMPORTS_PER_SOL, PublicKey, SystemProgram, Transaction } from '@solana/web3.js';
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 const SendSol = () => {
   const { connection } = useConnection();
